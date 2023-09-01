@@ -7,8 +7,8 @@ const niveis = require('./niveisRoute.js');
 
 
 module.exports = app => {
-    app.use(bodyParser.json())
     app.use(
+        bodyParser.json(),
         pessoas,
         turmas,
         niveis
