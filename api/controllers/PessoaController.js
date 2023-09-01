@@ -24,7 +24,7 @@ class PessoaController {
         const novaPessoa = req.body;
         try {
             const novaPessoaCriada = await database.Pessoas.create(novaPessoa);
-            return res.status(200).json(novaPessoaCriada)
+            return res.status(201).json(novaPessoaCriada)
         } catch (err) {
             return res.status(500).json(err.message)
         }
